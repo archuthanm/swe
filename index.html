@@ -9,13 +9,22 @@
 </head>
 <body vid="9">
 
-    <nav vid="10">
+    <nav class="site-nav" vid="10">
         <div class="nav-brand" vid="11">ARCHUTHAN.M</div>
-        <div class="nav-links" vid="12">
-            <a href="#about" vid="13">About</a>
-            <a href="#work" vid="15">Projects</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <div class="nav-links" vid="12">
+                <a href="#about" vid="13">About</a>
+                <a href="#experience" vid="14">Experience</a>
+                <a href="#work" vid="15">Projects</a>
+                <a href="#interests" vid="15a">Interests</a>
+            </div>
+            <a href="#contact" class="nav-cta" vid="16">Contact</a>
         </div>
-        <a href="#contact" class="nav-cta" vid="16">Contact</a>
     </nav>
 
     <header class="hero" vid="17">
@@ -27,48 +36,50 @@
             <h1 class="hero-title" vid="21">
                 <span vid="22">ARCHUTHAN</span>
                 <span vid="23">MOHANATHASAN</span>
-                <span vid="24" style="color: var(--yellow);">.</span>
+                <span class="hero-mark" vid="24">.</span>
             </h1>
             <p class="hero-desc" vid="25">
                 Building full-stack products and real-world software — from multi-tenant SaaS platforms to decentralised finance dashboards. Based in London, UK.<br vid="26"><br vid="27">
-                <a href="https://github.com/archuthanm" target="_blank" rel="noopener noreferrer" style="color: var(--yellow); display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;" vid="28"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" vid="29"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" vid="30"></path></svg></a>
-                <span style="color: var(--yellow); margin: 0 0.5rem;" vid="31">//</span>
-                <a href="https://linkedin.com/in/archuthan-mohanathasan-63187424b" target="_blank" rel="noopener noreferrer" style="color: var(--yellow); display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;" vid="32"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" vid="33"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" vid="34"></path></svg></a>
+                <span class="hero-socials">
+                    <a href="https://github.com/archuthanm" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub" vid="28"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" vid="29"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" vid="30"></path></svg></a>
+                    <span class="hero-social-divider" vid="31">//</span>
+                    <a href="https://linkedin.com/in/archuthan-mohanathasan-63187424b" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn" vid="32"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" vid="33"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" vid="34"></path></svg></a>
+                </span>
             </p>
         </div>
     </header>
 
     <main vid="35">
-        <section class="editorial-section" id="about" style="grid-template-columns: 2fr 1fr;" vid="36">
-            <div class="grid-panel" style="grid-row: span 2; border-bottom: none;" vid="37">
+        <section class="editorial-section section-about" id="about" vid="36">
+            <div class="grid-panel panel-profile" vid="37">
                 <div class="panel-header" vid="38">
                     <h2 vid="39">Profile</h2>
                     <span class="panel-number" vid="40">01</span>
                 </div>
-                <div class="dense-text" style="column-count: 1;" vid="41">
+                <div class="dense-text single-column" vid="41">
                     <strong vid="42">FULL-STACK BUILDER.</strong> CS student at King's College London — I build fast, I build clean, and I build things that last. SaaS platforms, productivity tools, Web3 interfaces — if it ships, I'm interested. Outside of code, I run my own algorithmic trading projects because the market is just another system to engineer.
                 </div>
-                <div style="display: flex; gap: 2rem; margin-top: auto; padding-top: 2rem;" vid="43">
+                <div class="profile-stats" vid="43">
                     <div vid="44">
-                        <div style="font-family: var(--font-display); font-size: 2.5rem; line-height: 1;" vid="45">2028</div>
-                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem;" vid="46">Graduation</div>
+                        <div class="stat-value" vid="45">2028</div>
+                        <div class="stat-label" vid="46">Graduation</div>
                     </div>
                     <div vid="47">
-                        <div style="font-family: var(--font-display); font-size: 2.5rem; line-height: 1;" vid="48">London</div>
-                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem;" vid="49">Location</div>
+                        <div class="stat-value" vid="48">London</div>
+                        <div class="stat-label" vid="49">Location</div>
                     </div>
                     <div vid="50">
-                        <div style="font-family: var(--font-display); font-size: 2.5rem; line-height: 1;" vid="51">Open</div>
-                        <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.25rem;" vid="52">To Work</div>
+                        <div class="stat-value" vid="51">Open</div>
+                        <div class="stat-label" vid="52">To Work</div>
                     </div>
                 </div>
             </div>
             
-            <div class="grid-panel graphic-panel" style="border-right: none;" vid="53">
+            <div class="grid-panel graphic-panel panel-no-right" vid="53">
                 <div class="abstract-shape" vid="54"></div>
             </div>
 
-            <div class="grid-panel tech-stack" id="stack" style="grid-column: auto; border-bottom: none; border-right: none;" vid="55">
+            <div class="grid-panel tech-stack panel-no-right" id="stack" vid="55">
                 <div class="header" vid="56">
                     <span vid="57">// SKILLS_STACK</span>
                     <span vid="58">ACTIVE</span>
@@ -90,64 +101,64 @@
             </div>
         </section>
 
-        <section class="editorial-section" id="education" style="border-top: none; grid-template-columns: 1fr 1fr;" vid="72">
-            <div class="grid-panel" style="border-bottom: none;" vid="73">
+        <section class="editorial-section section-education no-top-border" id="education" vid="72">
+            <div class="grid-panel panel-no-bottom" vid="73">
                 <div class="panel-header" vid="74">
                     <h2 vid="75">King's College London</h2>
-                    <span class="panel-number" style="color: var(--yellow);" vid="76">03</span>
+                    <span class="panel-number panel-number-yellow" vid="76">03</span>
                 </div>
-                <div style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 1rem;" vid="77"> MSci Computer Science</div>
-                <div style="font-size: 0.85rem; margin-bottom: 1.5rem;" vid="78">2024 – 2028</div>
-                <div class="dense-text" style="column-count: 1; font-size: 0.85rem;" vid="79">
+                <div class="education-degree" vid="77">MSci Computer Science</div>
+                <div class="education-years" vid="78">2024 – 2028</div>
+                <div class="dense-text single-column education-copy" vid="79">
                     Modules: Discrete Mathematics, Java, C++/Scala, Software Engineering (Django), Intro to AI/ML.
                 </div>
             </div>
-            <div class="grid-panel" style="background: var(--dark); color: var(--white); border-right: none; border-bottom: none;" vid="80">
-                <div class="panel-header" style="color: var(--white); margin-bottom: 1.5rem;" vid="81">
-                    <h2 style="font-family: var(--font-display); font-size: 1.5rem; text-transform: uppercase; line-height: 1;" vid="82">A-Levels</h2>
-                    <span class="panel-number" style="color: var(--yellow);" vid="83">02</span>
+            <div class="grid-panel panel-dark panel-no-right panel-no-bottom" vid="80">
+                <div class="panel-header panel-header-light" vid="81">
+                    <h2 class="subsection-title" vid="82">A-Levels</h2>
+                    <span class="panel-number panel-number-yellow" vid="83">02</span>
                 </div>
-                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;" vid="84">
-                    <div style="background: var(--yellow); color: var(--dark); padding: 0.5rem 1rem; font-family: var(--font-display); font-size: 1.1rem;" vid="85">Maths A*</div>
-                    <div style="background: var(--yellow); color: var(--dark); padding: 0.5rem 1rem; font-family: var(--font-display); font-size: 1.1rem;" vid="86">Further Maths A*</div>
-                    <div style="background: var(--white); color: var(--dark); padding: 0.5rem 1rem; font-family: var(--font-display); font-size: 1.1rem;" vid="87">Physics A</div>
-                    <div style="background: var(--white); color: var(--dark); padding: 0.5rem 1rem; font-family: var(--font-display); font-size: 1.1rem;" vid="88">Chemistry B</div>
+                <div class="grade-list" vid="84">
+                    <div class="grade-chip grade-chip-primary" vid="85">Maths A*</div>
+                    <div class="grade-chip grade-chip-primary" vid="86">Further Maths A*</div>
+                    <div class="grade-chip" vid="87">Physics A</div>
+                    <div class="grade-chip" vid="88">Chemistry B</div>
                 </div>
-                <div style="font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.8;" vid="89">St Dominic's Sixth Form College (2022 – 2024)</div>
+                <div class="education-note" vid="89">St Dominic's Sixth Form College (2022 – 2024)</div>
             </div>
         </section>
 
-        <section class="editorial-section" id="experience" style="border-top: none; grid-template-columns: 1fr 2fr;" vid="90">
-            <div class="grid-panel" style="border-bottom: none; background: var(--yellow);" vid="91">
-                <div class="panel-header" style="flex-direction: column; align-items: flex-start; gap: 1rem;" vid="92">
+        <section class="editorial-section section-experience no-top-border" id="experience" vid="90">
+            <div class="grid-panel panel-accent panel-no-bottom" vid="91">
+                <div class="panel-header panel-header-stack" vid="92">
                     <h2 vid="93">Experience</h2>
                     <span class="panel-number" vid="94">02</span>
                 </div>
-                <div class="project-meta" style="border-bottom: 2px solid var(--dark); padding-bottom: 0.5rem; margin: 2rem 0 1rem;" vid="95">
+                <div class="project-meta experience-meta" vid="95">
                     <span vid="96">EXP-01</span>
                     <span vid="97">JUN 2026 – PRESENT</span>
                 </div>
-                <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; line-height: 1; margin: 1rem 0;" vid="98">Global Dream Connect</h3>
-                <div style="font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 700;" vid="99">Software Engineer Intern</div>
-                <div class="project-tags" style="margin-top: auto;" vid="100">
+                <h3 class="experience-title" vid="98">Global Dream Connect</h3>
+                <div class="experience-role" vid="99">Software Engineer Intern</div>
+                <div class="project-tags push-bottom" vid="100">
                     <span class="tag" vid="101">SvelteKit</span>
                     <span class="tag" vid="102">TypeScript</span>
                     <span class="tag" vid="103">PostgreSQL</span>
                     <span class="tag" vid="104">RLS</span>
                 </div>
             </div>
-            <div class="grid-panel" style="border-bottom: none; border-right: none;" vid="105">
-                <div style="font-family: var(--font-display); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1.5rem;" vid="106">Zalicy Platform</div>
-                <div class="dense-text" style="column-count: 1; font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.5rem;" vid="107">
+            <div class="grid-panel panel-no-right panel-no-bottom" vid="105">
+                <div class="experience-subtitle" vid="106">Zalicy Platform</div>
+                <div class="dense-text single-column experience-copy" vid="107">
                     Co-building a multi-tenant SaaS platform for international university application tracking, used by schools, counsellors, students, and parents. Working full-stack in SvelteKit and TypeScript.
                 </div>
-                <div style="border-top: 2px solid var(--dark); padding-top: 1.5rem;" vid="108">
-                    <div style="font-family: var(--font-display); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 1rem;" vid="109">Key Contributions</div>
-                    <ul style="list-style: none; font-size: 0.85rem; line-height: 1.8;" vid="110">
-                        <li vid="111" style="display: flex; gap: 0.75rem;"><span style="color: var(--red); font-weight: 700;" vid="112">01</span> Onboarding wizards &amp; role-based dashboards</li>
-                        <li vid="113" style="display: flex; gap: 0.75rem;"><span style="color: var(--red); font-weight: 700;" vid="114">02</span> PostgreSQL schema with Row-Level Security</li>
-                        <li vid="115" style="display: flex; gap: 0.75rem;"><span style="color: var(--red); font-weight: 700;" vid="116">03</span> Five-role permission hierarchy with data isolation</li>
-                        <li vid="117" style="display: flex; gap: 0.75rem;"><span style="color: var(--red); font-weight: 700;" vid="118">04</span> Token-based auth &amp; UUID invitation links</li>
+                <div class="contributions" vid="108">
+                    <div class="contributions-title" vid="109">Key Contributions</div>
+                    <ul class="contribution-list" vid="110">
+                        <li vid="111"><span class="contribution-number" vid="112">01</span> Onboarding wizards &amp; role-based dashboards</li>
+                        <li vid="113"><span class="contribution-number" vid="114">02</span> PostgreSQL schema with Row-Level Security</li>
+                        <li vid="115"><span class="contribution-number" vid="116">03</span> Five-role permission hierarchy with data isolation</li>
+                        <li vid="117"><span class="contribution-number" vid="118">04</span> Token-based auth &amp; UUID invitation links</li>
                     </ul>
                 </div>
             </div>
@@ -210,61 +221,61 @@
             </div>
         </section>
 
-        <section class="editorial-section" id="interests" style="border-top: none; grid-template-columns: repeat(3, 1fr);" vid="157">
-            <div class="grid-panel" style="border-bottom: none; display: flex; flex-direction: column; justify-content: space-between;" vid="158">
-                <div class="panel-header" style="flex-direction: column; align-items: flex-start; gap: 1rem;" vid="159">
+        <section class="editorial-section section-interests no-top-border" id="interests" vid="157">
+            <div class="grid-panel panel-flex-between panel-no-bottom" vid="158">
+                <div class="panel-header panel-header-stack" vid="159">
                     <h2 vid="160">Interests &amp; Side Projects</h2>
                     <span class="panel-number" vid="161">04</span>
                 </div>
-                <div style="font-size: 0.85rem; line-height: 1.6;" vid="162">
+                <div class="interest-copy" vid="162">
                     Outside of software engineering, I'm drawn to the intersection of code and financial markets.
                 </div>
             </div>
-            <div class="grid-panel" style="border-bottom: none; background: var(--yellow);" vid="163">
+            <div class="grid-panel panel-accent panel-no-bottom" vid="163">
                 <div class="project-meta" vid="164">
                     <span vid="165">SIDE-01</span>
                     <span vid="166">APR 2026</span>
                 </div>
-                <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; line-height: 1; margin: 1rem 0;" vid="167">Market Monitor</h3>
-                <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.5rem;" vid="168">Financial News Intelligence Pipeline. Ingests professional finance news, filters and deduplicates across Macro, Rates, and Fintech, stores in SQLite. Delivers rolling 24h, 3-day, and 7-day investor digests via FastAPI.</p>
-                <div style="display: flex; gap: 1.5rem; margin-top: auto;" vid="169">
+                <h3 class="interest-title" vid="167">Market Monitor</h3>
+                <p class="interest-card-copy" vid="168">Financial News Intelligence Pipeline. Ingests professional finance news, filters and deduplicates across Macro, Rates, and Fintech, stores in SQLite. Delivers rolling 24h, 3-day, and 7-day investor digests via FastAPI.</p>
+                <div class="interest-stats push-bottom" vid="169">
                     <div vid="170">
-                        <div style="font-family: var(--font-display); font-size: 2rem; line-height: 1;" vid="171">3</div>
-                        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em;" vid="172">Digest Windows</div>
+                        <div class="stat-value stat-value-small" vid="171">3</div>
+                        <div class="stat-label stat-label-small" vid="172">Digest Windows</div>
                     </div>
                     <div vid="173">
-                        <div style="font-family: var(--font-display); font-size: 2rem; line-height: 1;" vid="174">SQLite</div>
-                        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em;" vid="175">Storage Engine</div>
+                        <div class="stat-value stat-value-small" vid="174">SQLite</div>
+                        <div class="stat-label stat-label-small" vid="175">Storage Engine</div>
                     </div>
                 </div>
-                <div class="project-tags" style="margin-top: 1.5rem;" vid="176">
+                <div class="project-tags project-tags-spaced" vid="176">
                     <span class="tag" vid="177">Python</span>
                     <span class="tag" vid="178">FastAPI</span>
                     <span class="tag" vid="179">SQLite</span>
                 </div>
                 <a href="https://signal-flow-tob9.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer" vid="180a">View Project</a>
             </div>
-            <div class="grid-panel" style="border-bottom: none; border-right: none; background: var(--dark); color: var(--white);" vid="180">
-                <div class="project-meta" style="border-bottom: 2px solid var(--white); color: var(--white);" vid="181">
-                    <span style="color: var(--yellow);" vid="182">SIDE-02</span>
+            <div class="grid-panel panel-dark panel-no-right panel-no-bottom" vid="180">
+                <div class="project-meta project-meta-light" vid="181">
+                    <span class="text-yellow" vid="182">SIDE-02</span>
                     <span vid="183">SEP 2025 – JAN 2026</span>
                 </div>
-                <h3 style="font-family: var(--font-display); font-size: 1.8rem; text-transform: uppercase; line-height: 1; margin: 1rem 0; color: var(--white);" vid="184">Options Pricing &amp; Risk Analysis</h3>
-                <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--white);" vid="185">Monte Carlo simulation engine for European option pricing. Standard error of $0.0004 via variance reduction. Validated against Black-Scholes with Greeks calculations, payoff visualisations, and sensitivity heatmaps.</p>
-                <div style="display: flex; gap: 1.5rem; margin-top: auto;" vid="186">
+                <h3 class="interest-title text-white" vid="184">Options Pricing &amp; Risk Analysis</h3>
+                <p class="interest-card-copy text-white" vid="185">Monte Carlo simulation engine for European option pricing. Standard error of $0.0004 via variance reduction. Validated against Black-Scholes with Greeks calculations, payoff visualisations, and sensitivity heatmaps.</p>
+                <div class="interest-stats push-bottom" vid="186">
                     <div vid="187">
-                        <div style="font-family: var(--font-display); font-size: 2rem; line-height: 1; color: var(--yellow);" vid="188">$0.0004</div>
-                        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.6);" vid="189">Standard Error</div>
+                        <div class="stat-value stat-value-small text-yellow" vid="188">$0.0004</div>
+                        <div class="stat-label stat-label-small stat-label-muted" vid="189">Standard Error</div>
                     </div>
                     <div vid="190">
-                        <div style="font-family: var(--font-display); font-size: 2rem; line-height: 1; color: var(--red);" vid="191">B-S</div>
-                        <div style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.6);" vid="192">Validation Model</div>
+                        <div class="stat-value stat-value-small text-red" vid="191">B-S</div>
+                        <div class="stat-label stat-label-small stat-label-muted" vid="192">Validation Model</div>
                     </div>
                 </div>
-                <div class="project-tags" style="margin-top: 1.5rem;" vid="193">
-                    <span class="tag" style="background: var(--white); color: var(--dark);" vid="194">Python</span>
-                    <span class="tag" style="background: var(--white); color: var(--dark);" vid="195">Monte Carlo</span>
-                    <span class="tag" style="background: var(--white); color: var(--dark);" vid="196">Quant Finance</span>
+                <div class="project-tags project-tags-spaced" vid="193">
+                    <span class="tag tag-light" vid="194">Python</span>
+                    <span class="tag tag-light" vid="195">Monte Carlo</span>
+                    <span class="tag tag-light" vid="196">Quant Finance</span>
                 </div>
                 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5917043" class="project-link" target="_blank" rel="noopener noreferrer" vid="180b">View Project</a>
             </div>
@@ -305,5 +316,23 @@
         </div>
     </footer>
 
+    <script>
+        const nav = document.querySelector('.site-nav');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenuLinks = document.querySelectorAll('.nav-menu a');
 
+        if (nav && navToggle) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navMenuLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('is-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 </body></html>
